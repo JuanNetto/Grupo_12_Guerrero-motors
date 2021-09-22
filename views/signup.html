@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles-signup.css">
 
     </head>
 
 
-    <body class="body-login">
+    <body class="body-signup">
             <header class="header">
                 <div class="container logo-nav-container">
                     <img src="/images/Logo-Final.jpg">
@@ -33,21 +33,27 @@
             </header>
 
             
-        <main class="main-login">
-                <div class="carrusel-login">
+        <main class="main-signup">
+                <div class="carrusel-signup">
                     <h1>Seré el carrusel</h1>
                 </div>
             
 
-                <div class="contenedor-login">
-                        <form action="/login" method="POST"></form>
-                        <h2>Iniciar Sesión</h2>
-                        <label>Nombre de usuario</label>
+                <div class="contenedor-signup">
+                        <form action="/signup" method="POST"></form>
+                        <h2>Sign Up</h2>
+                        <label>First Name</label>
+                        <input type="text">
+                        <label>Last Name</label>
+                        <input type="text">
+                        <label>Email</label>
                         <input type="email">
-                        <label>Contraseña</label>
+                        <label>User Name</label>
+                        <input type="text">
+                        <label>Password</label>
                         <input type="password">
-                        <label href="#">Olvido su contraseña?</label>
-                        <button class="Iniciar">Iniciar</button>
+                        <button class="Iniciar">Create Your Account</button>
+                        <label href="/login">Already you are member?. Sign In</label>
                 </div>
 
         </main>    
