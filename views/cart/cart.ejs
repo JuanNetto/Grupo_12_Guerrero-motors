@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Aquí incorporo el head desde la carpeta = views/partials  -->
+<%- include('../partials/head') %>
+
+    <body>
+<!-- Aquí incorporo el head desde la carpeta = views/partials  -->
+<%- include('../partials/header') %>
+
+        <main>
+            <section class="carrito-superior">
+                <div class="datos-vehiculo">
+                    <img src="\images\auto-standar.jfif">
+                    <label class="nombre-auto">Un tremendo ford fiesta bien al piso</label>
+                    <label class="precio">$precio</label>
+                </div>
+            </section>
+            <section class="carrito-inferior">
+                <div class="info-comprador">
+                    <form action="/home" method="GET">
+                    
+                        <p>
+                            <label>Nombre del titular</label>
+                        </p>
+
+                        <p>
+                            <input type="text">                          
+                        </p>
+
+                        <p>
+                           <label>Apellido</label>
+                        </p>
+
+                        <p>
+                            <input type="text">
+                        </p>
+
+                        <p>
+                           <label>Numero de la tarjeta</label>
+                        </p>
+
+                        <p>
+                            <input type="number">
+                        </p>
+
+                        <p>
+                            <label>Ingresá los 3 digitos del dorso de tu tarjeta</label>
+                        </p>
+
+                        <p>
+                            <input type="number">
+                        </p>
+
+                        <p>
+                            <label>Direccion</label>
+                        </p>
+
+                        <p>
+                            <input type="text">
+                        </p>
+
+                        <p>
+                            <input type="submit">
+                        </p>
+                    
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+
+</html>
