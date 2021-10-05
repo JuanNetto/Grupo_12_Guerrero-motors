@@ -1,6 +1,7 @@
 const routers = {
     home: '/',
-    compare: '/compare', 
+    compare: '/compare',
+    products:  '/product'
 }
 
 module.exports = routers;
