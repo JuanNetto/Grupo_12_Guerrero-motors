@@ -22,7 +22,6 @@ app.get('/login', (req, res) =>{
     res.sendFile(__dirname + '/views/login.html');
 })
 
-
 app.get('/signup', (req, res) =>{
     res.sendFile(__dirname + '/views/signup.html');
 })
