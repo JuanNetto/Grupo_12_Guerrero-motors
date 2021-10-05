@@ -1,15 +1,17 @@
 const express = require("express");
 const app = express();
 app.use(express.static('./public'));
+const controlador = require('./controllers/mainController');
+const rutas = require('./routers/main');
+
+app.set('view engine', 'ejs');
 
 app.listen(3000, ()=>{
 console.log('servidor funcionando');
-console.log('servidor funcionando');
 });
 
-app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/views/home.html');
-});
+app.get(rutas.home, controlador.home)
+
 
 app.get('/home', (req, res)=>{
     res.sendFile(__dirname + '/views/home.html');
