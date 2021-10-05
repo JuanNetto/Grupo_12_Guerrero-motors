@@ -7,8 +7,16 @@ const controlador = {
         res.render('home.ejs')},
     compare: (req, res) => {
         res.render('compare.ejs')},
-    Product: (req, res) => {
+    product: (req, res) => {
         res.render('Product.ejs')},
+    login: (req, res) => {
+        res.render('login.ejs')},
+    signup: (req, res) => {
+        res.render('signup.ejs')},
+    agregar: (req, res) => {
+        res.render('agregar.ejs')},
+    editar: (req, res) => {
+        res.render('editar.ejs')},           
  
     //login : (req, res) => {}
     //compare : (req, res) => {}

@@ -12,19 +12,19 @@ app.listen(3000, ()=>{
 console.log('servidor funcionando');
 });
 
-app.get(rutas.home, controlador.home)
+app.get(rutas.home, controlador.home);
 
-app.get(rutas.compare , controlador.compare)
+app.get(rutas.compare , controlador.compare);
 
-app.get(rutas.products, controlador.compare)
+app.get(rutas.products, controlador.product);
 
-app.get('/login', (req, res) =>{
-    res.sendFile(__dirname + '/views/login.html');
-})
+app.get(rutas.login, controlador.login);
 
-app.get('/signup', (req, res) =>{
-    res.sendFile(__dirname + '/views/signup.html');
-})
+app.get(rutas.signup, controlador.signup);
+
+app.get(rutas.editar, controlador.editar);
+
+app.get(rutas.agregar, controlador.agregar);
 
 // Reemplazo por implementacion de EJS -> Accede via -> Ruta / Controlador.
 //app.get('/cart', (req, res) =>{
