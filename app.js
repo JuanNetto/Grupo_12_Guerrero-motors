@@ -3,6 +3,8 @@ const app = express();
 app.use(express.static('./public'));
 const controlador = require('./controllers/mainController');
 const rutas = require('./routers/main');
+const cartController = require('./controllers/cartController');
+const cartRoutes = require('./routers/cartRoutes');
 
 app.set('view engine', 'ejs');
 
@@ -23,10 +25,12 @@ app.get('/product', (req, res) =>{
     res.sendFile(__dirname + '/views/Product.html');
 })
 
-app.get('/cart', (req, res) =>{
-    res.sendFile(__dirname + '/views/cart.html');
-})
-
 app.get('/signup', (req, res) =>{
     res.sendFile(__dirname + '/views/signup.html');
 })
+
+// Reemplazo por implementacion de EJS -> Accede via -> Ruta / Controlador.
+//app.get('/cart', (req, res) =>{
+//    res.sendFile(__dirname + '/views/cart.html');
+//})
+app.get(cartRoutes.cart, cartController.cart)
