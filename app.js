@@ -14,16 +14,14 @@ console.log('servidor funcionando');
 
 app.get(rutas.home, controlador.home)
 
-
 app.get(rutas.compare , controlador.compare)
+
+app.get(rutas.products, controlador.compare)
 
 app.get('/login', (req, res) =>{
     res.sendFile(__dirname + '/views/login.html');
 })
 
-app.get('/product', (req, res) =>{
-    res.sendFile(__dirname + '/views/Product.html');
-})
 
 app.get('/signup', (req, res) =>{
     res.sendFile(__dirname + '/views/signup.html');
