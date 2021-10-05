@@ -13,13 +13,7 @@ console.log('servidor funcionando');
 app.get(rutas.home, controlador.home)
 
 
-app.get('/home', (req, res)=>{
-    res.sendFile(__dirname + '/views/home.html');
-});
-
-app.get('/compare', (req, res)=>{
-    res.sendFile(__dirname + '/views/compare.html');
-});
+app.get(rutas.compare , controlador.compare)
 
 app.get('/login', (req, res) =>{
     res.sendFile(__dirname + '/views/login.html');

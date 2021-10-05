@@ -4,8 +4,11 @@ app.set('view engine', 'ejs');
 
 const controlador = {
     home: (req, res) => {
-        res.render('home.ejs')
+        res.render('home.ejs')},
+    compare: (req, res) => {
+        res.render('compare.ejs')
     }
+    
     //login : (req, res) => {}
     //compare : (req, res) => {}
 }
