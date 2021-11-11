@@ -1,0 +1,9 @@
+{
+      "marca": "ford",
+      "modelo": "fiesta",
+      "color": "negro",
+      "precio": 2400000,
+      "descripcion": "Un tremendo ford fiesta bien al piso gamer",
+      "imagen": ""
+} 
+{"marca":"peugeot ","modelo":"206","color":"azul","precio":"800000","descripcion":"un tremendo ford fiesta bien al piso","imagen":""}{"marca":"buggati ","modelo":"chiron","color":"azul","precio":"150000000","descripcion":"engo que agregar un poco de texto de relleno para confirmar que no explote cuando pongamos una descripcion larga de lo que viene siendo el vehiculo automotor.","imagen":""}{"marca":"bugatti","modelo":"chiron ","color":"negro","precio":"10000000000000000000.99","descripcion":"lorem ipsus.","imagen":"bugatti-chiron-2016-3_1920x1600c.jpg"}

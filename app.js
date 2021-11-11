@@ -5,6 +5,8 @@ const controlador = require('./controllers/mainController');
 const rutas = require('./routers/main');
 const cartController = require('./controllers/cartController');
 const cartRoutes = require('./routers/cartRoutes');
+app.use(express.urlencoded ( { extended: false } ) );
+app.use(express.json());
 
 app.set('view engine', 'ejs');
 
@@ -25,6 +27,9 @@ app.get(rutas.signup, controlador.signup);
 app.get(rutas.editar, controlador.editar);
 
 app.get(rutas.agregar, controlador.agregar);
+app.post(rutas.agregar, controlador.agregarPost);
+
+app.get(rutas.lista, controlador.lista);
 
 // Reemplazo por implementacion de EJS -> Accede via -> Ruta / Controlador.
 //app.get('/cart', (req, res) =>{

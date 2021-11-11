@@ -30,20 +30,21 @@
 
     <main>
         <div class="contenedor-agregar">
-            <form action="/" method="GET"></form>
+            <form method="POST" action="/agregar">
             <h2>Agregar un vehiculo</h2>
-            <label>Introduzca marca y modelo</label>
-            <input type="text">
-            <label>Introduzca los kilometros</label>
-            <input type="number">
+            <label>Introduzca marca</label>
+            <input type="text" name="marca">
+            <label>Introduzca modelo</label>
+            <input type="text" name="modelo">
             <label>Introduzca color</label>
-            <input type="text">
-            <label>Introduzca año</label>
-            <input type="number">
+            <input type="text" name="color">
+            <label>Introduzca precio</label>
+            <input type="number" name="precio">
             <label>Introduzca una breve despripción</label>
-            <input class="imagen" type="file" name="imagen" />
-            <textarea></textarea>
-            <button class="Enviar">Enviar</button>
+            <textarea name="descripcion"></textarea>
+            <input class="imagen" type="file" name="imagen" />          
+            <input type="submit">
+            </form>
         </div>
 
     </main>
