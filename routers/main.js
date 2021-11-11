@@ -6,6 +6,8 @@ const routers = {
     signup: '/signup',
     editar: '/editar',
     agregar: '/agregar',
+    lista: '/list',
+    agregarPost: '/agregarPost',
 }
 
 module.exports = routers;

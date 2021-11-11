@@ -1,0 +1,74 @@
+{
+    "usuarios" : [
+        {
+            "nombre": "Lewis",
+            "apellido": "Hamilton",
+            "email": "lewis@hamilton.com",
+            "contraseña": "Abcd1234",
+            "categoria": "comprador",
+            "imagen": "url",
+            "medio-de-pago":{
+                "tipo": "credito",
+                "numero": "xxxx-xxxx-xxxx-xxxx",
+                "codigo-seguridad": 256,
+                "vencimiento": "4/26"    
+            } 
+        },
+        {
+            "nombre": "Lewis",
+            "apellido": "Hamilton",
+            "email": "lewis@hamilton.com",
+            "contraseña": "Abcd1234",
+            "categoria": "comprador",
+            "imagen": "url",
+            "medio-de-pago":{
+                "tipo": "credito",
+                "numero": "xxxx-xxxx-xxxx-xxxx",
+                "codigo-seguridad": 256,
+                "vencimiento": "4/26"    
+            } 
+        },
+        {
+            "nombre": "Lewis",
+            "apellido": "Hamilton",
+            "email": "lewis@hamilton.com",
+            "contraseña": "Abcd1234",
+            "categoria": "comprador",
+            "imagen": "url",
+            "medio-de-pago":{
+                "tipo": "credito",
+                "numero": "xxxx-xxxx-xxxx-xxxx",
+                "codigo-seguridad": 256,
+                "vencimiento": "4/26"    
+            } 
+        },
+        {
+            "nombre": "Lewis",
+            "apellido": "Hamilton",
+            "email": "lewis@hamilton.com",
+            "contraseña": "Abcd1234",
+            "categoria": "comprador",
+            "imagen": "url",
+            "medio-de-pago":{
+                "tipo": "credito",
+                "numero": "xxxx-xxxx-xxxx-xxxx",
+                "codigo-seguridad": 256,
+                "vencimiento": "4/26"    
+            } 
+        },
+        {
+            "nombre": "Lewis",
+            "apellido": "Hamilton",
+            "email": "lewis@hamilton.com",
+            "contraseña": "Abcd1234",
+            "categoria": "comprador",
+            "imagen": "url",
+            "medio-de-pago":{
+                "tipo": "credito",
+                "numero": "xxxx-xxxx-xxxx-xxxx",
+                "codigo-seguridad": 256,
+                "vencimiento": "4/26"    
+            } 
+        }        
+    ]
+}
