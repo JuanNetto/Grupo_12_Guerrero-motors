@@ -18,6 +18,7 @@ const controlador = {
     agregar: (req, res) => {
         res.render('agregar.ejs')},
     editar: (req, res) => {
+<<<<<<< HEAD
         res.render('editar.ejs')}, 
     lista: (req, res)=> {
         res.render('carsList.ejs')},    
@@ -27,6 +28,16 @@ const controlador = {
         fs.appendFileSync('./database/productos.json',autonuevo);
         res.redirect('/');
     },      
+=======
+        res.render('editar.ejs')},
+    lista: (req, res)=> {
+        res.render('carsList.ejs')},            
+    agregarPost: (req, res) => {
+        let autonuevo = JSON.stringify(req.body);
+        fs.appendFileSync('./database/productos.json',autonuevo);
+        res.redirect('/');
+    },          
+>>>>>>> 2d26e063c4ab577993c165b15b91d3008fad0adc
     //login : (req, res) => {}
     //compare : (req, res) => {}
 }
