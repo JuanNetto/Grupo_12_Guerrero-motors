@@ -34,14 +34,11 @@
                 <form action="/" method="GET"></form>
                 <h2>Editar vehiculo</h2>
                 <label>Seleccione el vehiculo que desea modificar</label> 
-                <select name="vehiculo">
-                    <option>opcion 1</option>
-                    <option>opcion 2</option>
-                    <option>opcion 3</option>
-                    <option>opcion 4</option>
-                    <option>opcion 5</option>
-                    <option>opcion 6</option>
-                </select>                        
+                <ul>
+                    <% autos.forEach(function(auto){ %>
+                    <li><%= auto.marca%></li>
+                    <%});%>
+                </ul>                       
         </section>
 
         <section class="botones">
