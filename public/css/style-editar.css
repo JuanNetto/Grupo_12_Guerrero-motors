@@ -111,3 +111,10 @@ footer{
     text-align: center;
     margin-top: 6rem;
 }
+
+
+.contenedor-general h1{
+    size: 300rem;
+    color: cyan;
+   
+}

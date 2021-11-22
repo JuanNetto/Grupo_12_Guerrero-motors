@@ -3,6 +3,7 @@ const app = express();
 app.set('view engine', 'ejs');
 const fs = require("fs");
 let sitcoms = fs.readFileSync('./database/productos.json', "utf-8");
+const reproductos = JSON.parse(sitcoms)
 
 const controlador = {
     home: (req, res) => {
@@ -17,24 +18,23 @@ const controlador = {
         res.render('signup.ejs')},
     agregar: (req, res) => {
         res.render('agregar.ejs')},
-    editar: (req, res) => {
-        res.render('editar.ejs',{autos:[{id:1,marca:'ford'},{id:2,marca:'chevrolet'}]})}, 
+    editar: (req, res) => { 
+        res.render('editar.ejs',{reproductos})},  
+    editarPost: (req, res) => {
+        var identi = req.body
+        res.redirect('/agregar')
+    },     
     lista: (req, res)=> {
         res.render('carsList.ejs')},    
     agregarPost: (req, res) => {
         let autonuevo = JSON.stringify(req.body);
-        console.log(autonuevo);
         fs.appendFileSync('./database/productos.json',autonuevo);
         res.redirect('/');
     },      
 
     lista: (req, res)=> {
         res.render('carsList.ejs')},            
-    agregarPost: (req, res) => {
-        let autonuevo = JSON.stringify(req.body);
-        fs.appendFileSync('./database/productos.json',autonuevo);
-        res.redirect('/');
-    },          
+         
 
     //login : (req, res) => {}
     //compare : (req, res) => {}

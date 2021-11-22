@@ -25,6 +25,7 @@ app.get(rutas.login, controlador.login);
 app.get(rutas.signup, controlador.signup);
 
 app.get(rutas.editar, controlador.editar);
+app.post(rutas.editar, controlador.editarPost);
 
 app.get(rutas.agregar, controlador.agregar);
 app.post(rutas.agregar, controlador.agregarPost);

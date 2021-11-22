@@ -31,20 +31,27 @@
 
     <main>
         <section class="contenedor-general">
-                <form action="/" method="GET"></form>
-                <h2>Editar vehiculo</h2>
-                <label>Seleccione el vehiculo que desea modificar</label> 
-                <ul>
-                    <% autos.forEach(function(auto){ %>
-                    <li><%= auto.marca%></li>
-                    <%});%>
-                </ul>                       
+
+            <label>Seleccione el vehiculo que desea modificar</label> 
+            <select class="id">
+                <% reproductos.forEach(function(sitcoms){    %>
+                <option><%=sitcoms.id %></option>
+                <%  }); %>
+            </select>
+                                          
         </section>
+        <section>
+            <form method="POST" action="/editar"></form>
+                <% reproductos.forEach(function(sitcoms){    %>
+                <% if (sitcoms.id == 3){ %>    
+                <input type="text" class="marca" value=<%= sitcoms.marca %>>
+                <input type="text" class="modelo" value=<%= sitcoms.modelo %>>
+                <input type="text" class="color" value=<%= sitcoms.color %>>
+                <input type="text" class="precio" value=<%= sitcoms.precio %>>
+                <textarea placeholder="<%= sitcoms.descripcion%>"></textarea>
 
-        <section class="botones">
-
-            <button class="editar">Editar</button>
-            <button class="eliminar">Eliminar</button>
+                <% } }); %>
+            
 
         </section>
 

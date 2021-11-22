@@ -1,19 +1,33 @@
+[{
+    "id": "1",
+    "marca": "ford",
+    "modelo": "fiesta",
+    "color": "negro",
+    "precio": 2400000,
+    "descripcion": "Un tremendo ford fiesta bien al piso gamer",
+    "imagen":""
+},
 {
-      "id": "1",
-      "marca": "ford",
-      "modelo": "fiesta",
-      "color": "negro",
-      "precio": 2400000,
-      "descripcion": "Un tremendo ford fiesta bien al piso gamer",
-      "imagen": ""
-} 
-{"marca":"peugeot ","modelo":"206","color":"azul","precio":"800000","descripcion":"un tremendo ford fiesta bien al piso","imagen":""}{"marca":"buggati ","modelo":"chiron","color":"azul","precio":"150000000","descripcion":"engo que agregar un poco de texto de relleno para confirmar que no explote cuando pongamos una descripcion larga de lo que viene siendo el vehiculo automotor.","imagen":""}{"marca":"bugatti","modelo":"chiron ","color":"negro","precio":"10000000000000000000.99","descripcion":"lorem ipsus.","imagen":"bugatti-chiron-2016-3_1920x1600c.jpg"}
-    "marca" : "Volkswagen",
-    "modelo": "Polo",
-    "color": "Blanco",
-    "precio": "3000000",
-    "descripcion": "Polito 2020 , el auto que te salva la vida siempre y nunca te deja a pata, último modelo, de lo mejor de VW"
+    
+    "id":"2",    
+    "marca": "Volkswagen",
+    "modelo":"Polo",
+    "color":"Blanco",
+    "precio":"3000000",
+    "descripcion": "Polito 2020 , el auto que te salva la vida siempre y nunca te deja a pata, último modelo, de lo mejor de VW",
+    "imagen":""
+
+},
+{   
+    
+    "id":"3",
+    "marca": "Volkswagen",
+    "modelo":"Golf",
+    "color":"Plata",
+    "precio":"2000000",
+    "descripcion": "Golf 2017 condición prolífica para pisarle",
+    "imagen":""
+
 }
-{
-    "marca":"buggati ",
-    "modelo":"chiron ","color":"negro","precio":"123124312431234","descripcion":"fasdfsdavcsvasgsdvdvbregdfsvdfvervasdvae","imagen":""}{"marca":"mercedes","modelo":"300sl","color":"blanco","precio":"300000000","descripcion":"el auto de un ladron.","imagen":""}{"marca":"","modelo":"","color":"","precio":"","descripcion":"","imagen":""}
+
+]
