@@ -30,6 +30,9 @@ app.post(rutas.editar, controlador.editarPost);
 app.get(rutas.agregar, controlador.agregar);
 app.post(rutas.agregar, controlador.agregarPost);
 
+app.get(rutas.editarAuto, controlador.mostrarAuto);
+app.post(rutas.editarAuto, controlador.editarAuto);
+
 app.get(rutas.lista, controlador.lista);
 
 // Reemplazo por implementacion de EJS -> Accede via -> Ruta / Controlador.

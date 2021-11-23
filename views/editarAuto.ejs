@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Bienvenidos a</title>
+    <link rel="stylesheet" href="css/style-cart.css">
+</head>
+<header class="header">
+    <div class="container logo-nav-container">
+        <img class="logo" src="">
+        <nav class="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="/compare">Compare</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">SignUp</a></li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+        <form method="POST" action="/editarAuto">
+            <input type="text" class="id" value = <%= auto.id %>>
+            <input type="text" class="marca" value=<%= auto.marca %>>
+            <input type="text" class="modelo" value=<%= auto.modelo %>>
+            <input type="text" class="color" value=<%= auto.color %>>
+            <input type="text" class="precio" value=<%= auto.precio %>>
+            <textarea placeholder="<%= auto.descripcion%>"></textarea>
+            <input type="submit" value="Editar">
+        </form>    
+
+
+
+</body>

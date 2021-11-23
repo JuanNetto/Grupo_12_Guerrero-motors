@@ -8,6 +8,7 @@ const routers = {
     agregar: '/agregar',
     lista: '/list',
     agregarPost: '/agregarPost',
+    editarAuto: '/editar/:id',
 }
 
 module.exports = routers;

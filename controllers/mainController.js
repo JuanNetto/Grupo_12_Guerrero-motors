@@ -21,8 +21,8 @@ const controlador = {
     editar: (req, res) => { 
         res.render('editar.ejs',{reproductos})},  
     editarPost: (req, res) => {
-        var identi = req.body
-        res.redirect('/agregar')
+        var id = req.body;
+        res.redirect('/editar/:id')
     },     
     lista: (req, res)=> {
         res.render('carsList.ejs')},    
@@ -35,7 +35,26 @@ const controlador = {
     lista: (req, res)=> {
         res.render('carsList.ejs')},            
          
-
+    mostrarAuto: (req, res) => {
+        let auto;
+        for (i=0; i< reproductos.length; i++){
+            if (reproductos[i].id==req.params.id){
+                auto = reproductos[i];
+            }
+        }
+        res.render('editarAuto.ejs',{auto});
+    },
+    editarAuto: (req,res) => {
+        console.log("llegue");
+        for (i=0; i< reproductos.length; i++){
+            if (reproductos[i].id==req.params.id){
+                reproductos[i]=req.body;
+            }
+        }
+        let archivo = JSON.stringify(reproductos);
+        fs.writeFile('./database/productos.json', archivo);
+        res.redirect("/");
+    }    
     //login : (req, res) => {}
     //compare : (req, res) => {}
 }

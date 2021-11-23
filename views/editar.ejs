@@ -33,26 +33,17 @@
         <section class="contenedor-general">
 
             <label>Seleccione el vehiculo que desea modificar</label> 
-            <select class="id">
-                <% reproductos.forEach(function(sitcoms){    %>
-                <option><%=sitcoms.id %></option>
+            <form method="POST" action="/editar">
+            <ul>
+                <% reproductos.forEach(function(sitcoms){  %>
+                <li>
+                    <a href="/editar/<%=sitcoms.id %>"><%=sitcoms.id %></a>
+                </li>
                 <%  }); %>
-            </select>
+            </ul>
+            <input type="submit" value="Seleccionar">
+            </form>
                                           
-        </section>
-        <section>
-            <form method="POST" action="/editar"></form>
-                <% reproductos.forEach(function(sitcoms){    %>
-                <% if (sitcoms.id == 3){ %>    
-                <input type="text" class="marca" value=<%= sitcoms.marca %>>
-                <input type="text" class="modelo" value=<%= sitcoms.modelo %>>
-                <input type="text" class="color" value=<%= sitcoms.color %>>
-                <input type="text" class="precio" value=<%= sitcoms.precio %>>
-                <textarea placeholder="<%= sitcoms.descripcion%>"></textarea>
-
-                <% } }); %>
-            
-
         </section>
 
     </main>
