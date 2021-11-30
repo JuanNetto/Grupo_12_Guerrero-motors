@@ -12,7 +12,6 @@
 
 <header>
     <div class="container logo-nav-container">
-        <img class="logo" src="/images/Logo-Final.jpg">
         <nav class="navigation">
             <ul>
                 <li><a href="/">Home</a></li>
@@ -31,6 +30,18 @@
 <main>
     <section>
      
+        <label>lista de autos bien al piso</label> 
+        <ul>
+            <% reproductos.forEach(function(sitcoms){  %>
+                <%if (sitcoms.estado == "true"){%>
+                <li>
+                <a><%=sitcoms.marca%> <%=sitcoms.modelo%></a>
+                </li>
+            <%  }}); %>
+        </ul>
+
+                                      
+    </section>
 
     </section>
 </main>

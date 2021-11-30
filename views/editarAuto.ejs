@@ -27,13 +27,14 @@
 
 <body>
 
-        <form method="POST" action="/editarAuto">
-            <input type="text" class="id" value = <%= auto.id %>>
-            <input type="text" class="marca" value=<%= auto.marca %>>
-            <input type="text" class="modelo" value=<%= auto.modelo %>>
-            <input type="text" class="color" value=<%= auto.color %>>
-            <input type="text" class="precio" value=<%= auto.precio %>>
-            <textarea placeholder="<%= auto.descripcion%>"></textarea>
+        <form method="POST" action="/editar/:id">
+            <input type="text" name="id" value = <%= auto.id %>>
+            <input type="text" name="marca" value=<%= auto.marca %>>
+            <input type="text" name="modelo" value=<%= auto.modelo %>>
+            <input type="text" name="color" value=<%= auto.color %>>
+            <input type="text" name="precio" value=<%= auto.precio %>>
+            <input type="descripcion" name="descripcion" value=<% auto.descripcion%>>
+            <input type="estado" name="estado" value=<%= auto.estado%>>
             <input type="submit" value="Editar">
         </form>    
 

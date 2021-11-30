@@ -3,7 +3,8 @@ const app = express();
 app.set('view engine', 'ejs');
 const fs = require("fs");
 let sitcoms = fs.readFileSync('./database/productos.json', "utf-8");
-const reproductos = JSON.parse(sitcoms)
+let reproductos = JSON.parse(sitcoms)
+
 
 const controlador = {
     home: (req, res) => {
@@ -19,21 +20,15 @@ const controlador = {
     agregar: (req, res) => {
         res.render('agregar.ejs')},
     editar: (req, res) => { 
-        res.render('editar.ejs',{reproductos})},  
-    editarPost: (req, res) => {
-        var id = req.body;
-        res.redirect('/editar/:id')
-    },     
+        res.render('editar.ejs',{reproductos})},
     lista: (req, res)=> {
-        res.render('carsList.ejs')},    
+        res.render('carsList.ejs',{reproductos})},
     agregarPost: (req, res) => {
-        let autonuevo = JSON.stringify(req.body);
-        fs.appendFileSync('./database/productos.json',autonuevo);
+        reproductos.push(req.body);
+        var listanueva = JSON.stringify(reproductos);
+        fs.writeFileSync('./database/productos.json',listanueva);
         res.redirect('/');
-    },      
-
-    lista: (req, res)=> {
-        res.render('carsList.ejs')},            
+    },                
          
     mostrarAuto: (req, res) => {
         let auto;
@@ -46,17 +41,18 @@ const controlador = {
     },
     editarAuto: (req,res) => {
         console.log("llegue");
-        for (i=0; i< reproductos.length; i++){
-            if (reproductos[i].id==req.params.id){
-                reproductos[i]=req.body;
+        var autoId = req.body.id;
+        console.log(autoId);
+        for (let i=0; i< reproductos.length; i++){
+            if (reproductos[i].id==autoId){
+                reproductos[i] = req.body;
             }
         }
         let archivo = JSON.stringify(reproductos);
-        fs.writeFile('./database/productos.json', archivo);
+        fs.writeFileSync('./database/productos.json', archivo);
         res.redirect("/");
     }    
-    //login : (req, res) => {}
-    //compare : (req, res) => {}
+
 }
 
 module.exports=controlador;
